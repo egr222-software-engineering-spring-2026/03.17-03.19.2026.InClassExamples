@@ -9,13 +9,18 @@ public class Point {
         this(0, 0);
     }
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
+
     //constructor 2 with parameters
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-//    @Override
+    @Override
     public boolean equals(Point other) {       // bad
         if (x == other.x && y == other.y) {
             return true;
